@@ -1,6 +1,11 @@
 <app-header></app-header>
-
-<div class="container">
-  <app-card [text]="articleTexts[0]" [img]="articleImages[0]"></app-card>
-  <app-card [text]="articleTexts[1]" [img]="articleImages[1]"></app-card>
+<div>
+  <div class="container">
+    <app-card
+      *ngFor="let i of [0, 1]"
+      [text]="articleTexts[i]"
+      [img]="articleImages[i]"
+    ></app-card>
+  </div>
+  <app-proposals></app-proposals>
 </div>
