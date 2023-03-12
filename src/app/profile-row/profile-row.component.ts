@@ -13,4 +13,8 @@ export class ProfileRowComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  loadProfile() {
+    alert(`...loading ${this.name} Page`);
+  }
 }
