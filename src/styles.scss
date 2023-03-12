@@ -1,3 +1,14 @@
+:root {
+  --primary-clr: white;
+  --secondary-clr: white;
+
+  --black-5-percent: rgba(0, 0, 0, 0.05);
+  --black-10-percent: rgba(0, 0, 0, 0.1);
+  --black-30-percent: rgba(0, 0, 0, 0.3);
+  --black-50-percent: rgba(0, 0, 0, 0.5);
+  --black-80-percent: rgba(0, 0, 0, 0.8);
+}
+
 *,
 *::after,
 *::before {
@@ -7,5 +18,10 @@
 }
 
 body {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: var(--black-5-percent);
+}
+
+//general positiong classes
+.margin-bottom-16 {
+  margin-bottom: 16px;
 }

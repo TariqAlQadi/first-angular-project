@@ -1,9 +1,10 @@
-<div class="profile-row">
-  <img src="/assets/img/1.jpg" alt="" />
-  <div>
-    <b>Niklas</b><br />
-    <span class="location">Hannover</span>
-  </div>
-</div>
+<app-profile-row></app-profile-row>
 
-<b>Trader Recommendations</b>
+<b>Recommendations</b>
+
+<app-profile-row
+  *ngFor="let i of [0, 1, 2, 3]"
+  [name]="names[i]"
+  [location]="locations[i]"
+  [img]="images[i]"
+></app-profile-row>

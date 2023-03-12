@@ -3,10 +3,12 @@
 <div class="flexRow">
   <div class="container">
     <app-card
-      *ngFor="let i of [0, 1]"
+      *ngFor="let i of [0, 1, 2, 3]"
       [text]="articleTexts[i]"
       [img]="articleImages[i]"
     ></app-card>
   </div>
   <app-proposals></app-proposals>
 </div>
+
+<app-footer></app-footer>
