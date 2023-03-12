@@ -1,3 +1,10 @@
 .container {
-  padding-left: 10px;
+  padding-top: 100px;
+}
+
+.flexRow {
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
