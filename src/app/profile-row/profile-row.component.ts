@@ -15,6 +15,6 @@ export class ProfileRowComponent implements OnInit {
   ngOnInit(): void {}
 
   loadProfile() {
-    alert(`...loading ${this.name} Page`);
+    alert(`...loading ${this.name}'s Profile Page`);
   }
 }
