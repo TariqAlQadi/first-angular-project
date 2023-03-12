@@ -1,6 +1,8 @@
-<app-profile-row></app-profile-row>
+<app-profile-row [name]="names[0]" [img]="images[0]"></app-profile-row>
 
-<b>Recommendations</b>
+<div class="margin-bottom-16">
+  <b>Recommendations</b>
+</div>
 
 <app-profile-row
   *ngFor="let i of [0, 1, 2, 3]"
