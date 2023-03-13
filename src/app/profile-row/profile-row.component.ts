@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { AddService } from '../add.service';
 
 @Component({
   selector: 'app-profile-row',
@@ -10,11 +11,7 @@ export class ProfileRowComponent implements OnInit {
   @Input() img = '';
   @Input() location = '';
 
-  constructor() {}
+  constructor(public a: AddService) {}
 
   ngOnInit(): void {}
-
-  loadProfile() {
-    alert(`...loading ${this.name}'s Profile Page`);
-  }
 }

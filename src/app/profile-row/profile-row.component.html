@@ -1,8 +1,11 @@
-<div (click)="loadProfile()" class="profile-row margin-bottom-16">
-  <img src="{{ img }}" alt="" />
-  <div>
-    <b>{{ name }}</b
-    ><br />
-    <span class="location">{{ location }}</span>
-  </div>
+<div class="profile-row margin-bottom-16">
+  <a (click)="a.loadProfile(name)">
+    <img src="{{ img }}" alt="" />
+    <div class="name">
+      <b>{{ name }}</b
+      ><br />
+      <span class="location">{{ location }}</span>
+    </div>
+  </a>
+  <a (click)="a.add(name, img)">Folgen</a>
 </div>

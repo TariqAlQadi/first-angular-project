@@ -21,10 +21,21 @@ body {
   background-color: var(--black-5-percent);
 }
 
+.standard-card {
+  background-color: white;
+  width: 350px;
+  border: 1px solid var(--black-10-percent);
+  border-radius: 5px;
+}
+
 //general positioning classes
 
 .margin-bottom-16 {
   margin-bottom: 16px;
+}
+
+.padding-16 {
+  padding: 16px;
 }
 
 .padding-top-10 {

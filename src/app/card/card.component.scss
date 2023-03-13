@@ -1,9 +1,5 @@
 .card {
   min-height: 350px;
-  background-color: white;
-  width: 350px;
-  border: 1px solid var(--black-30-percent);
-  border-radius: 5px;
   overflow: hidden; //damit object-fit/center klappt
   position: relative;
   margin-right: 20px;

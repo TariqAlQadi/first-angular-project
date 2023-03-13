@@ -1,1 +1,5 @@
-<p>cart works!</p>
+<div class="standard-card item-row padding-16">
+  <div *ngFor="let name of a.names; let i = index" class="cart">
+    <img src="{{ a.images[i] }}" alt="{{ name }}" />{{ name }}
+  </div>
+</div>

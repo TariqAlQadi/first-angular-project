@@ -1,3 +1,7 @@
+.name {
+  width: 140px;
+}
+
 .profile-row {
   display: flex;
   align-items: center;
@@ -15,5 +19,15 @@
   .location {
     color: var(--black-50-percent);
     font-size: 12px;
+  }
+
+  a {
+    font-size: 12px;
+    color: blue;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
