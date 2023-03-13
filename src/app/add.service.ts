@@ -4,8 +4,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class AddService {
-  names = ['Niklas', 'Tariq', 'Anna'];
-  images = ['assets/img/1.jpg', 'assets/img/2.jpg', 'assets/img/3.jpg'];
+  names = ['Costumor X'];
+  images = ['assets/img/profileImage.jpg'];
 
   constructor() {}
 
