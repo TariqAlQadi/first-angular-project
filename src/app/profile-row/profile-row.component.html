@@ -7,5 +7,5 @@
       <span class="location">{{ location }}</span>
     </div>
   </a>
-  <a (click)="a.add(name, img)">Folgen</a>
+  <a *ngIf="canFollow" (click)="a.add(name, img); canFollow = false">Folgen</a>
 </div>

@@ -10,6 +10,7 @@ export class ProfileRowComponent implements OnInit {
   @Input() name = '';
   @Input() img = '';
   @Input() location = '';
+  @Input() canFollow = true;
 
   constructor(public a: AddService) {}
 
