@@ -4,20 +4,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { CardComponent } from './card/card.component';
-import { UserComponent } from './user/user.component';
-import { HomeComponent } from './home/home.component';
-import { CartComponent } from './cart/cart.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ArticleDetailComponent } from './articles/article-detail/article-detail.component';
+import { ArticleListComponent } from './articles/article-list/article-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    CardComponent,
-    CartComponent,
-    UserComponent,
-    HomeComponent,
+    PageNotFoundComponent,
+    ArticleDetailComponent,
+    ArticleListComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
