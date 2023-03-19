@@ -10,8 +10,8 @@ const articlesRoutes: Routes = [
     redirectTo: '/allArticles',
   },
   {
-    path: 'articles:id',
-    redirectTo: '/allArticles:id',
+    path: 'articles/:id',
+    redirectTo: '/allArticles/:id',
   },
   {
     path: 'allArticles',
@@ -19,7 +19,7 @@ const articlesRoutes: Routes = [
     data: {},
   },
   {
-    path: 'allArticles:id',
+    path: 'allArticles/:id',
     component: ArticleDetailComponent,
     data: {},
   },
