@@ -7,12 +7,22 @@ import { ArticleDetailComponent } from './article-detail/article-detail.componen
 const articlesRoutes: Routes = [
   {
     path: 'articles',
+    redirectTo: 'allArticles',
+  },
+  {
+    path: 'allArticles',
     component: ArticleListComponent,
+    data: { animation: 'heroes' },
   },
   {
     path: 'article/:id',
-    redirectTo: '',
+    redirectTo: '/allArticles:id',
+    data: {},
+  },
+  {
+    path: 'allArticles:id',
     component: ArticleDetailComponent,
+    data: {},
   },
 ];
 
