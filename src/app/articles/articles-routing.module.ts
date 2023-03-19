@@ -12,12 +12,11 @@ const articlesRoutes: Routes = [
   {
     path: 'allArticles',
     component: ArticleListComponent,
-    data: { animation: 'heroes' },
+    data: {},
   },
   {
-    path: 'article/:id',
+    path: 'articles:id',
     redirectTo: '/allArticles:id',
-    data: {},
   },
   {
     path: 'allArticles:id',

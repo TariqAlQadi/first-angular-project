@@ -1,10 +1,28 @@
-import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
+import { switchMap } from 'rxjs/operators';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
+import { ArticleService } from '../article.service';
+import { Article } from '../article';
 
 @Component({
   selector: 'app-article-list',
   templateUrl: './article-list.component.html',
-  styleUrls: ['./article-list.component.scss']
+  styleUrls: ['./article-list.component.scss'],
 })
-export class ArticleListComponent {
+export class ArticleListComponent implements OnInit {
+  article$!: Observable<Article[]>;
+  selectedId = 0;
 
+  constructor(private service: ArticleService, private route: ActivatedRoute) {}
+
+  ngOnInit() {
+    this.article$ = this.route.paramMap.pipe(
+      switchMap((params) => {
+        this.selectedId = parseInt(params.get('id')!, 10);
+        return this.service.getArticles();
+      })
+    );
+  }
 }

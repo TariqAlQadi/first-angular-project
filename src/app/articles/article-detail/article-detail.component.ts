@@ -11,7 +11,7 @@ import { ArticleService } from '../article.service';
   styleUrls: ['./article-detail.component.scss'],
 })
 export class ArticleDetailComponent implements OnInit {
-  articles!: Observable<Article>;
+  article$!: Observable<Article>;
 
   constructor(
     private route: ActivatedRoute,
@@ -21,7 +21,9 @@ export class ArticleDetailComponent implements OnInit {
 
   ngOnInit() {
     // this.article$ = this.route.paramMap.pipe(
-    //   switchMap((params: ParamMap) => this.service.getHero(params.get('id')!))
+    //   switchMap((params: ParamMap) =>
+    //     this.service.getArticle(params.get('id')!)
+    //   )
     // );
   }
 
@@ -30,6 +32,6 @@ export class ArticleDetailComponent implements OnInit {
     // Pass along the hero id if available
     // so that the HeroList component can select that hero.
     // Include a junk 'foo' property for fun.
-    this.router.navigate(['/superheroes', { id: articleId, foo: 'foo' }]);
+    this.router.navigate(['/allArticles', { id: articleId, foo: 'foo' }]);
   }
 }

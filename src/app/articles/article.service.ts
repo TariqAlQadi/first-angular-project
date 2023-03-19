@@ -11,13 +11,16 @@ import { ARTICLES } from './mock-articles';
 export class ArticleService {
   constructor() {}
 
-  getHeroes(): Observable<Article[]> {
+  getArticles(): Observable<Article[]> {
     return of(ARTICLES);
   }
 
   getHero(id: number | string) {
-    return this.getHeroes().pipe(
-      map((heroes: Article[]) => heroes.find((hero) => hero.id === +id)!)
+    return this.getArticles().pipe(
+      // (+) before `id` turns the string into a number
+      map(
+        (articles: Article[]) => articles.find((article) => article.id === +id)!
+      )
     );
   }
 }
