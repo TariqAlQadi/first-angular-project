@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+
 import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
 
@@ -15,7 +16,7 @@ export class ArticleService {
     return of(ARTICLES);
   }
 
-  getHero(id: number | string) {
+  getArticle(id: number | string) {
     return this.getArticles().pipe(
       // (+) before `id` turns the string into a number
       map(

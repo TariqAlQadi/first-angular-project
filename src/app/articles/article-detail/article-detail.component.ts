@@ -2,6 +2,7 @@ import { switchMap } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { Observable } from 'rxjs';
+
 import { Article } from '../article';
 import { ArticleService } from '../article.service';
 
@@ -20,11 +21,11 @@ export class ArticleDetailComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    // this.article$ = this.route.paramMap.pipe(
-    //   switchMap((params: ParamMap) =>
-    //     this.service.getArticle(params.get('id')!)
-    //   )
-    // );
+    this.article$ = this.route.paramMap.pipe(
+      switchMap((params: ParamMap) =>
+        this.service.getArticle(params.get('id')!)
+      )
+    );
   }
 
   gotoArticles(article: Article) {

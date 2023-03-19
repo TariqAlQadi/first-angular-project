@@ -12,13 +12,13 @@ import { Article } from '../article';
   styleUrls: ['./article-list.component.scss'],
 })
 export class ArticleListComponent implements OnInit {
-  article$!: Observable<Article[]>;
+  articles$!: Observable<Article[]>;
   selectedId = 0;
 
   constructor(private service: ArticleService, private route: ActivatedRoute) {}
 
   ngOnInit() {
-    this.article$ = this.route.paramMap.pipe(
+    this.articles$ = this.route.paramMap.pipe(
       switchMap((params) => {
         this.selectedId = parseInt(params.get('id')!, 10);
         return this.service.getArticles();

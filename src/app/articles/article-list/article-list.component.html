@@ -1,12 +1,12 @@
 <h2>Heroes</h2>
 <ul class="article-list">
-  <!-- <li
+  <li
     *ngFor="let article of articles$ | async"
     [class.selected]="article.id === selectedId"
   >
-    <a [routerLink]="['/hero', hero.id]">
+    <a [routerLink]="['/article', article.id]">
       <span class="badge">{{ article.id }}</span
       >{{ article.name }}
     </a>
-  </li> -->
+  </li>
 </ul>

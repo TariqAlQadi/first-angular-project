@@ -1,9 +1,9 @@
 <h2>Article Title</h2>
-<!-- <div *ngIf="article$ | async as article"> -->
-<!-- <h3>{{ article.name }}</h3>
-<img src="{{ article.imgSrc }}" alt="{{ article.name }}" />
-<p>Id: {{ article.id }}</p>
-<p>{{ article.description }}</p>
-<p>price: {{ article.price }}</p>
-<button type="button" (click)="gotoArticles(article)">Back</button> -->
-<!-- </div> -->
+<div *ngIf="article$ | async as article">
+  <h3>{{ article.name }}</h3>
+  <img src="{{ article.imgSrc }}" alt="{{ article.name }}" />
+  <p>Id: {{ article.id }}</p>
+  <p>{{ article.description }}</p>
+  <p>price: {{ article.price }}</p>
+  <button type="button" (click)="gotoArticles(article)">Back</button>
+</div>
