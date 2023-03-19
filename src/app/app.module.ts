@@ -5,9 +5,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CardComponent } from './card/card.component';
-import { ProposalsComponent } from './proposals/proposals.component';
-import { ProfileRowComponent } from './profile-row/profile-row.component';
-import { FriendsComponent } from './friends/friends.component';
 import { UserComponent } from './user/user.component';
 import { HomeComponent } from './home/home.component';
 import { CartComponent } from './cart/cart.component';
@@ -18,8 +15,6 @@ import { CartComponent } from './cart/cart.component';
     HeaderComponent,
     FooterComponent,
     CardComponent,
-    ProposalsComponent,
-    ProfileRowComponent,
     CartComponent,
     UserComponent,
     HomeComponent,

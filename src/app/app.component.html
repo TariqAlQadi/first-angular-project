@@ -1,17 +1,3 @@
 <app-header></app-header>
-
 <router-outlet></router-outlet>
-
-<div class="flexRow">
-  <div class="container">
-    <app-cart></app-cart>
-    <app-card
-      *ngFor="let i of [0, 1, 2, 3]"
-      [text]="articleTexts[i]"
-      [img]="articleImages[i]"
-    ></app-card>
-  </div>
-  <app-proposals class="padding-top-10"></app-proposals>
-</div>
-
 <app-footer></app-footer>
