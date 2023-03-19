@@ -7,15 +7,6 @@ import { ArticleDetailComponent } from './article-detail/article-detail.componen
 const articlesRoutes: Routes = [
   {
     path: 'articles',
-    redirectTo: 'allArticles',
-  },
-  {
-    path: 'article/:id',
-    redirectTo: '',
-  },
-  {
-    path: 'allArticles',
-    redirectTo: '',
     component: ArticleListComponent,
   },
   {
@@ -29,4 +20,4 @@ const articlesRoutes: Routes = [
   imports: [RouterModule.forChild(articlesRoutes)],
   exports: [RouterModule],
 })
-export class HeroesRoutingModule {}
+export class ArticlesRoutingModule {}
