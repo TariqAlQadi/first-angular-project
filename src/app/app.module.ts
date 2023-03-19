@@ -7,6 +7,9 @@ import { FooterComponent } from './footer/footer.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ArticleDetailComponent } from './articles/article-detail/article-detail.component';
 import { ArticleListComponent } from './articles/article-list/article-list.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { ProfileComponent } from './profile/profile.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +19,9 @@ import { ArticleListComponent } from './articles/article-list/article-list.compo
     PageNotFoundComponent,
     ArticleDetailComponent,
     ArticleListComponent,
+    NavigationComponent,
+    ProfileComponent,
+    CartComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
