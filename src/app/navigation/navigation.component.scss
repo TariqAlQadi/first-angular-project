@@ -1,3 +1,19 @@
+.navigation {
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: space-around;
+}
+
 nav a {
   padding: 1rem;
+  text-decoration: none;
+  color: black;
+  background-color: rgb(73, 147, 147);
+  cursor: pointer;
+  width: 33%;
+  text-align: center;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
