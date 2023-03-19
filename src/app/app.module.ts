@@ -11,6 +11,8 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { ProfileComponent } from './profile/profile.component';
 import { CartComponent } from './cart/cart.component';
 
+import { Router } from '@angular/router';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,4 +29,6 @@ import { CartComponent } from './cart/cart.component';
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+  constructor(router: Router) {}
+}
