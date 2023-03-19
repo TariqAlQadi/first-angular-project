@@ -32,7 +32,5 @@ export const ARTICLES: Article[] = [
     price: 42,
     description: 'Top product!!',
     imgSrc: '/assets/img/4',
-    rating: [],
-    comments: [],
   },
 ];
