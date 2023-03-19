@@ -7,7 +7,7 @@ import { ArticleDetailComponent } from './article-detail/article-detail.componen
 const articlesRoutes: Routes = [
   {
     path: 'articles',
-    redirectTo: 'allArticles',
+    redirectTo: '/allArticles',
   },
   {
     path: 'allArticles',

@@ -1,0 +1,16 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+
+  p {
+    width: 20rem;
+  }
+
+  img {
+    width: 10rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+  }
+}
