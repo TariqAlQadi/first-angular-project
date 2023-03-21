@@ -9,10 +9,10 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { CartComponent } from './components/cart/cart.component';
+import { FeedComponent } from './components/feed/feed.component';
+import { ProductComponent } from './components/product/product.component';
 
 import { Router } from '@angular/router';
-import { FeedComponent } from './components/feed/feed.component';
-import { ArticleComponent } from './components/article/article.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,7 @@ import { ArticleComponent } from './components/article/article.component';
     ProfileComponent,
     CartComponent,
     FeedComponent,
-    ArticleComponent,
+    ProductComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

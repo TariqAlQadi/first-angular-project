@@ -5,11 +5,13 @@ import { CartComponent } from './components/cart/cart.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { FeedComponent } from './components/feed/feed.component';
+import { ProductComponent } from './components/product/product.component';
 
 const routes: Routes = [
   { path: 'feed', component: FeedComponent },
   { path: 'cart', component: CartComponent },
   { path: 'profile', component: ProfileComponent },
+  { path: 'product/:id', component: ProductComponent },
 
   { path: '', redirectTo: '/feed', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
