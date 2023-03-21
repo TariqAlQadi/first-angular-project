@@ -3,16 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { ArticleDetailComponent } from './articles/article-detail/article-detail.component';
-import { ArticleListComponent } from './articles/article-list/article-list.component';
-import { NavigationComponent } from './navigation/navigation.component';
-import { ProfileComponent } from './profile/profile.component';
-import { CartComponent } from './cart/cart.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { CartComponent } from './components/cart/cart.component';
 
 import { Router } from '@angular/router';
+import { FeedComponent } from './components/feed/feed.component';
+import { ArticleComponent } from './components/article/article.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +20,11 @@ import { Router } from '@angular/router';
     HeaderComponent,
     FooterComponent,
     PageNotFoundComponent,
-    ArticleDetailComponent,
-    ArticleListComponent,
     NavigationComponent,
     ProfileComponent,
     CartComponent,
+    FeedComponent,
+    ArticleComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

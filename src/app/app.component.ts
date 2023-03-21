@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ChildrenOutletContexts } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +6,5 @@ import { ChildrenOutletContexts } from '@angular/router';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  constructor(private contexts: ChildrenOutletContexts) {}
+  constructor() {}
 }
