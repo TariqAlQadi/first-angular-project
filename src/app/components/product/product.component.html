@@ -1,5 +1,14 @@
-<h1>product works!</h1>
 <a routerLink="/feed">Back</a>
 
-<p>ID: {{ id }}</p>
-<p>{{ name }}</p>
+<div class="product">
+  <h1>{{ name }}</h1>
+  <p>ID: {{ id }}</p>
+
+  <img src="{{ imageSource }}" alt="{{ name }}" />
+  <p>"{{ description }}"</p>
+  <p>Price: {{ price }} €</p>
+  <div>
+    <button>Add to Cart</button>
+    <button>Add to Wishlist</button>
+  </div>
+</div>
