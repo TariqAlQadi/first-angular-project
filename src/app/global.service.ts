@@ -14,7 +14,7 @@ export class GlobalService {
       description: 'cool',
       price: 12.5,
       imageSource: '/assets/img/1.jpg',
-      stock: 3,
+      stock: 6,
     },
     {
       id: '2',
@@ -22,7 +22,7 @@ export class GlobalService {
       description: 'very cool',
       price: 43.5,
       imageSource: '/assets/img/2.jpg',
-      stock: 3,
+      stock: 2,
     },
     {
       id: '3',
@@ -30,7 +30,7 @@ export class GlobalService {
       description: 'cool',
       price: 99.5,
       imageSource: '/assets/img/3.jpg',
-      stock: 3,
+      stock: 1,
     },
     {
       id: '4',

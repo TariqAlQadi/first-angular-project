@@ -1,0 +1,22 @@
+.feed {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  align-items: center;
+  border: 1px solid black;
+  margin: 0 auto;
+
+  h1,
+  a {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
