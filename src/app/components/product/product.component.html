@@ -10,7 +10,9 @@
   <p>Stock {{ stock }}</p>
 
   <div>
-    <button>Add to Cart</button>
+    <button (click)="addToCart({ id: id, name: name, price: price })">
+      Add to cart
+    </button>
     <button>Add to Wishlist</button>
   </div>
 </div>

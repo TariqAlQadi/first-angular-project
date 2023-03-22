@@ -50,7 +50,17 @@ export class GlobalService {
   }
 
   addCart(product: any) {
+    const checkCart = this.cart.find(
+      (cartProduct) => cartProduct.id === product.id
+    );
+
+    if (checkCart) {
+      console.log('product already in cart -- stack count');
+    }
+
     this.cart.push(product);
+
+    console.log('cart', this.cart);
   }
 
   addWish(product: any) {

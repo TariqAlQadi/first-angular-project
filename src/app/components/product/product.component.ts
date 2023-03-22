@@ -39,13 +39,8 @@ export class ProductComponent implements OnInit {
     }
   }
 
-  // TO-DO
-  // addCart(id: any) {
-  //   const currentProduct = this.globalService
-  //     .getProducts()
-  //     .find((product) => id === product.id);
-
-  //   this.globalService.addCart(currentProduct);
-  //   this.globalService.removeStock(currentProduct.id);
-  // }
+  addToCart(product: any) {
+    this.globalService.addCart(product);
+    console.log('Added to cart');
+  }
 }
