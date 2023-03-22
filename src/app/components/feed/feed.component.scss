@@ -1,11 +1,12 @@
 .feed {
   display: flex;
   flex-direction: column;
-  width: 33%;
+  gap: 2rem;
   align-items: center;
   border: 1px solid black;
+  width: 33%;
   margin: 0 auto;
-
+  padding: 2rem;
   h1,
   a {
     margin-bottom: 1rem;
