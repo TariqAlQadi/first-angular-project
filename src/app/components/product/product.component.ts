@@ -38,4 +38,14 @@ export class ProductComponent implements OnInit {
       this.stock = currentProduct.stock;
     }
   }
+
+  // TO-DO
+  // addCart(id: any) {
+  //   const currentProduct = this.globalService
+  //     .getProducts()
+  //     .find((product) => id === product.id);
+
+  //   this.globalService.addCart(currentProduct);
+  //   this.globalService.removeStock(currentProduct.id);
+  // }
 }

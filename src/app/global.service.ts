@@ -69,6 +69,7 @@ export class GlobalService {
     const foundProduct = this.products.find((product) => {
       product.id === id;
     });
+
     if (foundProduct.stock > 0) {
       foundProduct.stock = foundProduct.stock--;
     } else {
