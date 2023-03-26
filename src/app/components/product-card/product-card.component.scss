@@ -43,7 +43,7 @@ img {
   transform: translateX(-20%) translateY(-20%);
   width: 2em;
   height: 2em;
-  border-radius: 50%;
+  border-radius: var(--br-round);
   border: 2px solid grey;
   margin: -0.4em;
 }
@@ -52,7 +52,7 @@ img {
   transition: 250ms;
   padding: 1rem;
   background-color: grey;
-  border-radius: 5px;
+  border-radius: var(--br-5px);
 }
 
 .article__name {
@@ -118,7 +118,7 @@ img {
   right: 0;
   z-index: -10;
   transition: 250ms;
-  border-radius: 5px;
+  border-radius: var(--br-5px);
   opacity: 0;
 }
 

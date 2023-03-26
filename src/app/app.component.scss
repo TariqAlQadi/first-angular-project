@@ -1,17 +1,1 @@
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
-:root {
-  --primary-clr: white;
-  --secondary-clr: black;
-
-  --accent-clr: hotpink;
-
-  --border-radius: 5px;
-  --border-radius-round: 50%;
-}
