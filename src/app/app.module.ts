@@ -13,6 +13,7 @@ import { FeedComponent } from './components/feed/feed.component';
 import { ProductComponent } from './components/product/product.component';
 
 import { Router } from '@angular/router';
+import { ProductCardComponent } from './components/product-card/product-card.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { Router } from '@angular/router';
     CartComponent,
     FeedComponent,
     ProductComponent,
+    ProductCardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
