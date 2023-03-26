@@ -8,6 +8,7 @@ import { Component, Input } from '@angular/core';
 export class ProductCardComponent {
   @Input() name = '';
   @Input() src = '';
+  @Input() price = 0;
 
   constructor() {}
 }

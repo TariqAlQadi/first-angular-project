@@ -49,6 +49,10 @@ export class GlobalService {
     return this.products;
   }
 
+  getCart(): any[] {
+    return this.cart;
+  }
+
   addCart(product: any) {
     const checkCart = this.cart.find(
       (cartProduct) => cartProduct.id === product.id
