@@ -44,13 +44,15 @@ img {
   width: 2em;
   height: 2em;
   border-radius: 50%;
-  border: 2px solid var(--clr-dark);
+  border: 2px solid grey;
   margin: -0.4em;
 }
 
 .front {
   transition: 250ms;
   padding: 1rem;
+  background-color: grey;
+  border-radius: 5px;
 }
 
 .article__name {
@@ -116,7 +118,7 @@ img {
   right: 0;
   z-index: -10;
   transition: 250ms;
-  border-radius: var(--br);
+  border-radius: 5px;
   opacity: 0;
 }
 
