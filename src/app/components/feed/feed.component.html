@@ -1,16 +1,13 @@
 <div class="feed">
   <h1>Feed</h1>
 
-  <!-- hardcoded links 
-  <a routerLink="/product/1">Product 1</a>
-  <a routerLink="/product/2">Product 2</a>
-  <a routerLink="/product/3">Product 3</a>
-  <a routerLink="/product/4">Product 4</a> -->
-
   <ul class="product-list">
     <li *ngFor="let product of products; index as i">
-      <a routerLink="/product/product.id">
-        <app-product-card></app-product-card>
+      <a routerLink="/product/{{ product.id }}">
+        <app-product-card
+          [name]="product.name"
+          [src]="product.imageSource"
+        ></app-product-card>
       </a>
     </li>
   </ul>
