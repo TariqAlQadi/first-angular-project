@@ -5,7 +5,7 @@ import { CartComponent } from './pages/cart/cart.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { FeedComponent } from './pages/feed/feed.component';
-import { ProductComponent } from './components/product/product.component';
+import { ProductComponent } from './pages/product-detail/product-detail.component';
 
 const routes: Routes = [
   { path: 'feed', component: FeedComponent },

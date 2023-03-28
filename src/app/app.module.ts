@@ -10,7 +10,7 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { ProfileComponent } from './pages/profile/profile.component';
 import { CartComponent } from './pages/cart/cart.component';
 import { FeedComponent } from './pages/feed/feed.component';
-import { ProductComponent } from './components/product/product.component';
+import { ProductComponent } from './pages/product-detail/product-detail.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { WishlistComponent } from './components/wishlist/wishlist.component';
 

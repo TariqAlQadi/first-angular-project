@@ -1,8 +1,8 @@
 <div class="cart">
   <h1>Cart</h1>
-
   <ul class="cart-list">
     <li *ngFor="let product of cart">
+      <span>{{ product.inCart }}x</span>
       <a routerLink="/product/{{ product.id }}">
         <app-product-card
           [name]="product.name"
@@ -11,5 +11,7 @@
         ></app-product-card>
       </a>
     </li>
+    <p>Total:{{ totalPrice }} $</p>
+    <button (click)="checkout()">Checkout</button>
   </ul>
 </div>

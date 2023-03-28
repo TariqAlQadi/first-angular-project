@@ -11,7 +11,17 @@ export class CartComponent implements OnInit {
 
   cart = this.globalService.getCart();
 
-  ngOnInit(): void {}
+  totalPrice = 0;
 
-  clearCart(): void {}
+  ngOnInit(): void {
+    this.getTotalPrice();
+  }
+
+  getTotalPrice(): void {
+    this.totalPrice = this.globalService.getTotalPrice();
+  }
+
+  checkout(): void {
+    alert('your are checking out!');
+  }
 }
