@@ -15,6 +15,7 @@ import { ProductCardComponent } from './components/product-card/product-card.com
 import { WishlistComponent } from './components/wishlist/wishlist.component';
 
 import { Router } from '@angular/router';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { Router } from '@angular/router';
     ProductComponent,
     ProductCardComponent,
     WishlistComponent,
+    ButtonComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

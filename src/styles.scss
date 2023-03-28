@@ -31,7 +31,14 @@ body {
   background-color: var(--black-5-percent);
 }
 
-//general positioning classes
+//HELPER
+
+//Interactivity
+.cursor-p {
+  cursor: pointer;
+}
+
+//Positioning
 .margin-bottom-16 {
   margin-bottom: 16px;
 }

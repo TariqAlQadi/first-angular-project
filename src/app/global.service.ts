@@ -15,7 +15,7 @@ export class GlobalService {
       price: 12.5,
       imageSource: '/assets/img/1.jpg',
       stock: 6,
-      inCart: 0,
+      inCart: 1,
     },
     {
       id: '2',
@@ -45,7 +45,17 @@ export class GlobalService {
       inCart: 0,
     },
   ];
-  private cart: any[] = [];
+  private cart: any[] = [
+    {
+      id: '1',
+      name: 'Cards',
+      description: 'cool',
+      price: 12.5,
+      imageSource: '/assets/img/1.jpg',
+      stock: 6,
+      inCart: 1,
+    },
+  ];
   private wish: any[] = [];
 
   totalPrice = 0;
