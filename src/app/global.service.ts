@@ -97,6 +97,9 @@ export class GlobalService {
   }
 
   //Wishlist
+  getWish(): any {
+    return this.wish;
+  }
   addWish(product: any) {
     this.wish.push(product);
   }
