@@ -1,6 +1,9 @@
 <div class="feed">
   <h1>Feed</h1>
 
+  <app-link text="This is a link Component"></app-link>
+  <app-link text="Link"></app-link>
+
   <ul class="product-list">
     <li *ngFor="let product of products; index as i">
       <a routerLink="/product/{{ product.id }}">
