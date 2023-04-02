@@ -1,8 +1,13 @@
-img {
-  max-width: 100%;
-}
+.product-card {
+  padding: 20px;
 
-a {
-  text-decoration: none;
-  color: black;
+  img {
+    padding: 5px;
+    width: 200px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
 }

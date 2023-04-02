@@ -1,17 +1,66 @@
 .feed {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   border: 1px solid black;
-  width: 33%;
   margin: 0 auto;
   margin-bottom: 50px;
+  width: 70%;
 
-  h1 {
+  h2 {
     margin-bottom: 3rem;
+  }
+
+  .list-settings {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(227, 227, 227);
+    padding: 10px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+
+    .sort-direction {
+      border: none;
+      background-color: transparent;
+      transform: translateY(5px);
+    }
+  }
+
+  .amount {
+    span {
+      font-weight: bold;
+      margin-right: 20px;
+    }
   }
 
   ul {
     list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    li {
+      border: 1px solid lightgrey;
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+      width: 250px;
+    }
+
+    button {
+      border: none;
+      background-color: transparent;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .cart-button {
+      background-color: darkolivegreen;
+      color: white;
+
+      &:hover {
+        background-color: olivedrab;
+      }
+    }
+
+    .cart-svg {
+      transform: translateY(4px);
+    }
   }
 }
