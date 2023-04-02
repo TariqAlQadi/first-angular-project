@@ -1,9 +1,42 @@
 .footer {
   position: relative;
   bottom: 0;
-  background-color: pink;
   width: 100%;
-  min-height: 4rem;
-  font-size: 2rem;
-  text-align: center;
+  background-color: white;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .links {
+    display: flex;
+    gap: 100px;
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+  }
+
+  .batches {
+    margin-bottom: 15px;
+    border: 1px solid black;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .copyright {
+    margin-bottom: 70px;
+    font-size: small;
+    color: darkgrey;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+  h4 {
+    margin-bottom: 20px;
+    padding: 5px;
+    font-weight: 100;
+    font-size: 0.8rem;
+  }
 }
