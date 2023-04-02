@@ -1,9 +1,8 @@
-<a routerLink="/product/{{ id }}">
-  <img class="thumbnail" src="{{ src }}" alt="article cover #1" />
-  <h3 class="article__name">{{ name }}</h3>
+<div class="product-card">
+  <a routerLink="/product/{{ id }}">
+    <img src="{{ src }}" alt="article cover #1" />
+    <h3>{{ name }}</h3>
 
-  <p class="price">{{ price }} $</p>
-</a>
-
-<button (click)="addToCart()">Add to Cart</button>
-<button (click)="addToWish()">Add to Wishlist</button>
+    <p class="price">{{ price }} $</p>
+  </a>
+</div>

@@ -12,12 +12,5 @@ export class ProductCardComponent {
   @Input() price = 0;
   @Input() id = 0;
 
-  constructor(private globalService: GlobalService) {}
-
-  addToCart() {
-    //this.globalService.addToCart();
-  }
-  addToWish() {
-    //this.globalService.addToWish()
-  }
+  constructor() {}
 }

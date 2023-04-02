@@ -12,4 +12,11 @@ export class FeedComponent implements OnInit {
   products = this.globalService.getProducts();
 
   ngOnInit(): void {}
+
+  addToCart(product: any) {
+    this.globalService.addToCart(product);
+  }
+  addToWish(product: any) {
+    this.globalService.addToWish(product);
+  }
 }
