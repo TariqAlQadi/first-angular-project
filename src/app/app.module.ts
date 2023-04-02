@@ -12,7 +12,7 @@ import { CartComponent } from './pages/cart/cart.component';
 import { FeedComponent } from './pages/feed/feed.component';
 import { ProductComponent } from './pages/product-detail/product-detail.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
-import { WishlistComponent } from './components/wishlist/wishlist.component';
+import { WishlistComponent } from './pages/wishlist/wishlist.component';
 
 import { Router } from '@angular/router';
 import { ButtonComponent } from './components/button/button.component';

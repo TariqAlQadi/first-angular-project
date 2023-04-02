@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class GlobalService {
   constructor() {}
 
-  //global datasets
+  //global data
   private products: any[] = [
     {
       id: '1',
@@ -45,6 +45,7 @@ export class GlobalService {
       inCart: 0,
     },
   ];
+
   private cart: any[] = [
     {
       id: '1',
@@ -84,25 +85,25 @@ export class GlobalService {
     this.totalPrice = this.getTotalPrice();
   }
 
+  removeFromCart(product: any) {
+    this.cart.splice(this.cart.indexOf(product), 1);
+    this.totalPrice = this.getTotalPrice();
+  }
   getTotalPrice(): number {
+    //type: number, because this function RETURNs a number
     return this.cart.reduce(
       (total, product) => total + product.price * product.inCart,
       0
     );
   }
-
-  removeFromCart(product: any) {
-    this.cart.splice(this.cart.indexOf(product), 1);
-    this.totalPrice = this.getTotalPrice();
-  }
-
   //Wishlist
-  getWish(): any {
+  getWish() {
     return this.wish;
   }
-  addWish(product: any) {
+  addToWish(product: any) {
     this.wish.push(product);
   }
+  removeFromWish() {}
 
   //Stock
   removeFromStock(id: any) {
@@ -116,4 +117,5 @@ export class GlobalService {
       alert('no more in stock!');
     }
   }
+  addToStock() {}
 }

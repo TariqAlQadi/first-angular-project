@@ -6,13 +6,12 @@
 
   <ul class="product-list">
     <li *ngFor="let product of products; index as i">
-      <a routerLink="/product/{{ product.id }}">
-        <app-product-card
-          [name]="product.name"
-          [src]="product.imageSource"
-          [price]="product.price"
-        ></app-product-card>
-      </a>
+      <app-product-card
+        [name]="product.name"
+        [src]="product.imageSource"
+        [price]="product.price"
+        [id]="product.id"
+      ></app-product-card>
     </li>
   </ul>
 </div>

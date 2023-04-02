@@ -1,0 +1,14 @@
+<div class="wishlist">
+  <h1>Wishlist</h1>
+
+  <ul>
+    <li *ngFor="let product of wishlist; index as i">
+      <app-product-card
+        [name]="product.name"
+        [src]="product.imageSource"
+        [price]="product.price"
+        [id]="product.id"
+      ></app-product-card>
+    </li>
+  </ul>
+</div>

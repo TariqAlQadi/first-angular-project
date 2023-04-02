@@ -45,4 +45,8 @@ export class ProductComponent implements OnInit {
   addToCart() {
     this.globalService.addToCart(this.currentProduct);
   }
+
+  addToWish() {
+    this.globalService.addToWish(this.currentProduct);
+  }
 }

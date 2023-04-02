@@ -1,46 +1,9 @@
-<div class="article">
-  <div class="rank">3</div>
-  <div class="front">
-    <img class="thumbnail" src="{{ src }}" alt="article cover #1" />
-    <h3 class="article__name">{{ name }}</h3>
-    <div class="stats">
-      <p class="price">{{ price }} $</p>
-      <div class="provider">
-        <img src="assets/img/profileImage.jpg" alt="provider #1" />
-        <img src="assets/img/profileImage.jpg" alt="provider #2" />
-        <img src="assets/img/profileImage.jpg" alt="provider #3" />
-      </div>
-    </div>
-  </div>
-  <div class="back">
-    <div class="article-info">
-      <p class="article-stats">59k<span>Watching</span></p>
-      <p class="article-stats">2058<span>Sold</span></p>
-    </div>
-    <button class="btn">See this Articles</button>
-    <div class="provider">
-      <div class="single-provider">
-        <div class="icon">
-          <img src="assets/img/profileImage.jpg" alt="provider #1" />
-        </div>
-        <p class="name">Niklas</p>
-        <p class="number">86 sold</p>
-      </div>
-      <div class="single-provider">
-        <div class="icon">
-          <img src="assets/img/profileImage.jpg" alt="provider #2" />
-        </div>
-        <p class="name">Regine</p>
-        <p class="number">75 sold</p>
-      </div>
-      <div class="single-provider">
-        <div class="icon">
-          <img src="assets/img/profileImage.jpg" alt="provider #3" />
-        </div>
-        <p class="name">Katrin</p>
-        <p class="number">186 sold</p>
-      </div>
-    </div>
-  </div>
-  <div class="article__background"></div>
-</div>
+<a routerLink="/product/{{ id }}">
+  <img class="thumbnail" src="{{ src }}" alt="article cover #1" />
+  <h3 class="article__name">{{ name }}</h3>
+
+  <p class="price">{{ price }} $</p>
+</a>
+
+<button (click)="addToCart()">Add to Cart</button>
+<button (click)="addToWish()">Add to Wishlist</button>
