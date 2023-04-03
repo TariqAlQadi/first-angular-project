@@ -18,6 +18,7 @@ import { Router } from '@angular/router';
 import { ButtonComponent } from './components/button/button.component';
 import { LinkComponent } from './components/link/link.component';
 import { SvgComponent } from './components/svg/svg.component';
+import { FilterComponent } from './components/filter/filter.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { SvgComponent } from './components/svg/svg.component';
     ButtonComponent,
     LinkComponent,
     SvgComponent,
+    FilterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
