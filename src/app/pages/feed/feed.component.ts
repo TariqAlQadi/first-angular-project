@@ -11,6 +11,8 @@ export class FeedComponent implements OnInit {
 
   products = this.globalService.getProducts();
 
+  sortDirection = 'asc';
+
   ngOnInit(): void {}
 
   addToCart(product: any) {
@@ -18,5 +20,9 @@ export class FeedComponent implements OnInit {
   }
   addToWish(product: any) {
     this.globalService.addToWish(product);
+  }
+  //sort
+  toggleSortDirection(sortDirection: string) {
+    this.sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
   }
 }
