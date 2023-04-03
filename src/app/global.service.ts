@@ -65,6 +65,18 @@ export class GlobalService {
   getProducts(): any[] {
     return this.products;
   }
+
+  //toggles class on element per #id
+  toggleClass(elRef: any, cssClass: string) {
+    const hasClass = elRef.classList.contains(cssClass);
+
+    if (hasClass) {
+      elRef.classList.remove(cssClass);
+    } else {
+      elRef.classList.add(cssClass);
+    }
+  }
+
   //Cart
   getCart(): any[] {
     return this.cart;

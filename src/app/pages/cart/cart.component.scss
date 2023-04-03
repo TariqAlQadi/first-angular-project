@@ -15,14 +15,9 @@
   li {
     border: 1px solid black;
     display: flex;
-    min-height: 200px;
-  }
-
-  a {
-    text-decoration: none;
-    display: flex;
     flex-direction: column;
-    align-items: center;
+    min-height: 200px;
+    margin-bottom: 20px;
   }
 
   img {
@@ -30,7 +25,17 @@
   }
 
   button {
-    width: 200px;
-    max-height: 200px;
+    width: 50%;
+    padding: 5px;
+    border: none;
+    border-top: 1px solid lightgrey;
+
+    &:last-child {
+      border-left: 1px solid lightgray;
+    }
+
+    &:hover {
+      background-color: lightgray;
+    }
   }
 }
