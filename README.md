@@ -14,7 +14,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 <hr>
 
-### The **link-button** component
+### The angular **link-button** component
 
 - fully customizable
 - called by `<a-b>`
@@ -26,7 +26,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - can have all kinds of props and different stylings like width, routerLink(href), fill(svg inside buttons), etc
 <hr>
 
-### The **svg** component
+### The angular **svg** component
 
 - fully customizable
 - called by `<app-svg>`

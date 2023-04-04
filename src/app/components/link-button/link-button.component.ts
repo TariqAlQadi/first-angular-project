@@ -7,7 +7,12 @@ import { Component, Input } from '@angular/core';
 })
 export class LinkComponent {
   @Input() routerLink = '';
+  @Input() type = '';
   @Input() text = '';
   @Input() variant = '';
-  @Input() width = '40px';
+
+  @Input() svgWidth = '';
+  @Input() svgFill = '';
+  @Input() svgVariant = '';
+  @Input() svgTitle = '';
 }
