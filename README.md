@@ -2,26 +2,31 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
 
-## Development server
+## Welcome to Spellbook
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+    This is a web-shop for buying all kinds of illusions!
+    Feel free to look around!
+    I recommend you to view this file in the Preview.
 
-## Code scaffolding
+<hr>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Features
 
-## Build
+<hr>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### The **link-button** component
 
-## Running unit tests
+- fully customizable
+- called by `<a-b>`
+- has variants and props(default/no variant: `<a>`)
+  <br>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+  `<a-b variant="save" text="text">` = `<button type="submit">{{text}}</button" >`
 
-## Running end-to-end tests
+- can have all kinds of props and different stylings like width, routerLink(href), fill(svg inside buttons), etc
+<hr>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### The **svg** component
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- fully customizable
+- called by `<app-svg>`
