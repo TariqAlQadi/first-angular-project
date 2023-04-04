@@ -1,0 +1,15 @@
+<!-- VARIANTS -->
+<!-- LINK -->
+<div *ngIf="variant === ''" class="link">
+  <a routerLink="{{ routerLink }}">{{ text }}</a>
+</div>
+
+<!-- SAVE -->
+<button *ngIf="variant === 'save'" type="submit" class="save button">
+  <app-svg variant="save" width="{{ width }}" fill="white"></app-svg>
+</button>
+
+<!-- DELETE -->
+<button *ngIf="variant === 'delete'" type="button" class="delete button">
+  <app-svg variant="delete" width="{{ width }}" fill="red"></app-svg>
+</button>

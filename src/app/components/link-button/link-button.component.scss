@@ -1,0 +1,61 @@
+// VARIANT STYLES
+// LINK
+.link {
+  position: relative;
+  padding: 5px;
+
+  a {
+    text-decoration: none;
+    color: darkgray;
+    transition: color 0.3s;
+
+    &:before {
+      content: "";
+      width: 2px;
+      height: 2px;
+      background-color: darkolivegreen;
+      position: absolute;
+      transform: translateY(1em);
+      opacity: 0;
+    }
+    &:hover:before {
+      width: 95%;
+      opacity: 1;
+      transition: width 0.3s, opacity 0.3s;
+    }
+
+    &:hover {
+      color: darkolivegreen;
+      transition: color 0.3s;
+    }
+  }
+}
+
+//GENERAL BUTTON
+.button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+//SAVE
+.save {
+  background-color: green;
+
+  &:hover {
+    background-color: darkgreen;
+    transition: background-color 0.5s;
+  }
+}
+
+//DELETE
+.delete {
+  background-color: white;
+
+  &:hover {
+    background-color: lightpink;
+    transition: background-color 0.5s;
+  }
+}

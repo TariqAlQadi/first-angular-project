@@ -13,12 +13,11 @@ import { FeedComponent } from './pages/feed/feed.component';
 import { ProductComponent } from './pages/product-detail/product-detail.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { WishlistComponent } from './pages/wishlist/wishlist.component';
-
-import { Router } from '@angular/router';
-import { ButtonComponent } from './components/button/button.component';
-import { LinkComponent } from './components/link/link.component';
+import { LinkComponent } from './components/link-button/link-button.component';
 import { SvgComponent } from './components/svg/svg.component';
 import { FilterComponent } from './components/filter/filter.component';
+
+import { Router } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -33,7 +32,6 @@ import { FilterComponent } from './components/filter/filter.component';
     ProductComponent,
     ProductCardComponent,
     WishlistComponent,
-    ButtonComponent,
     LinkComponent,
     SvgComponent,
     FilterComponent,
