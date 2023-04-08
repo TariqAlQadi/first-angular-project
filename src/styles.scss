@@ -1,3 +1,5 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
 *,
 *::after,
 *::before {
@@ -15,7 +17,9 @@
 
   --black-5-percent: rgba(0, 0, 0, 0.05);
   --black-10-percent: rgba(0, 0, 0, 0.1);
+  --black-20-percent: rgba(0, 0, 0, 0.2);
   --black-30-percent: rgba(0, 0, 0, 0.3);
+  --black-40-percent: rgba(0, 0, 0, 0.4);
   --black-50-percent: rgba(0, 0, 0, 0.5);
   --black-80-percent: rgba(0, 0, 0, 0.8);
 
