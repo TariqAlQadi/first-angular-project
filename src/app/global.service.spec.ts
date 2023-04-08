@@ -24,7 +24,7 @@ describe('GlobalService', () => {
       price: 12.5,
       imageSource: '/assets/img/1.jpg',
       stock: 6,
-      inCart: 1,
+      inCart: 2,
     };
     service.addToCart(product);
     const cart = service.getCart();
@@ -57,7 +57,7 @@ describe('GlobalService', () => {
       stock: 6,
       inCart: 1,
     };
-    service.addWish(product);
+    service.addToWish(product);
     const wish = service.getWish();
     expect(wish).toContain(product);
   });
